@@ -34,10 +34,10 @@ Du Vert.X pour la partie serveur, OpenTelemetry supporte aussi le réactif !
 
 ```bash
   cd Alice
-  ./mvnw clean package
 ```
 
 Maintenant il faut configurer la SDK d'Open Telemetry avec les exporteurs qu'on souhaite utiliser (ici Jaeger) et nommer notre service. 
+Sur Windows, passez bien par CMD et non Powershell ni le nouveau terminal Windows avec cette syntaxe. 
 
 Sur Windows | Sur Linux
 ------------ | -------------
@@ -50,6 +50,8 @@ Plus d'infos sur les variables sont dispos ici : https://github.com/open-telemet
 ```bash
 java -javaagent:opentelemetry-javaagent-all.jar -jar .\target\alice-1.0.0-SNAPSHOT-fat.jar 
 ```
+
+La console doit afficher *"Alice's ready to receive her mails..."*
 
 ## Le facteur (Partie .NET)
 
