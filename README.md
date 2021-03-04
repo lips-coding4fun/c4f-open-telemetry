@@ -34,6 +34,7 @@ Du Vert.X pour la partie serveur, OpenTelemetry supporte aussi le réactif !
 
 ```bash
   cd Alice
+  ./mvnw clean package #Si vous êtes sur un réseau d'entreprise utilisez plutôt mvn directement pour fetch
 ```
 
 Maintenant il faut configurer la SDK d'Open Telemetry avec les exporteurs qu'on souhaite utiliser (ici Jaeger) et nommer notre service. 
